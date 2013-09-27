@@ -23,7 +23,7 @@
             // See the documentation at http://www.telerik.com/analytics/resources/documentation    
             // Create the monitor instance using the unique product key for Test App
             
-            var settings = _eqatec.createSettings("07C10A76305040B1A2E87D83A56C170B");
+            var settings = _eqatec.createSettings("__YOUR-EQATEC-KEY-HERE__");
             
             settings.version = "1.2.3";
             
