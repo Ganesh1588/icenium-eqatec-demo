@@ -10,11 +10,9 @@
         <script src="kendo/js/jquery.min.js"></script>
         <script src="kendo/js/kendo.mobile.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
-
-        <script src="scripts/login.js"></script>
-        <script src="scripts/location.js"></script>
-        <script src="scripts/weather.js"></script>
-        <script src="scripts/app.js"></script>
+		<script src="http://cdn.icenium.com/live/mist/2013.3.919.3/js/noamd/EqatecMonitor.min.js"></script>
+        
+        
 
     </head>
     <body>
@@ -131,7 +129,7 @@
         </script>
 
         <!--Layout-->
-        <div data-role="layout" data-id="tabstrip-layout" >
+        <div data-role="layout" data-id="tabstrip-layout" data-show="app.logViewStart" data-hide="app.logViewEnd">
 
             <!--Header-->
             <div data-role="header">
@@ -150,5 +148,16 @@
                 </div>
             </div>
         </div>
+        
+        <script src="scripts/login.js"></script>
+        <script src="scripts/location.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/appMonitor.js"></script>
+        <script src="scripts/app.js"></script>
+        
+        <script>
+        	console.log("Starting monitor...");
+        	app.startMonitor();
+		</script>
     </body>
 </html>
